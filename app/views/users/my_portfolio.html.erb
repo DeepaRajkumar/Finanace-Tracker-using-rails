@@ -1,7 +1,7 @@
 <h1>My Portfolio</h1>
 <div>
 	<h3>Search Ticker Here</h3>
-	<%= form_tag search_stock_path,remote:true, method: :get do |form| %>
+	<%= form_tag search_stock_path, method: :get do |form| %>
 		<div class="row">
 			<div class="col-9">
 				<%= text_field_tag :stock, params[:stock], placeholder:"Enter your ticker here", class:"form-control" %>
